@@ -7,7 +7,7 @@ dev-init: ## Terraform init for DEV env
 dev-apply: ## Terraform Apply for DEV env
 	@terraform apply -var-file=env/dev.tfvars -auto-approve -no-color
 
-dev-destroy: ## Terraform Apply for DEV env
+dev-destroy: ## Terraform Destroy for DEV env
 	@terraform destroy -var-file=env/dev.tfvars -auto-approve -no-color
 
 prod-init: ## Terraform init for PROD env
@@ -16,6 +16,6 @@ prod-init: ## Terraform init for PROD env
 prod-apply: ## Terraform Apply for PROD env
 	@terraform apply -var-file=env/dev.tfvars -auto-approve -no-color
 
-prod-destroy: ## Terraform Apply for PROD env
+prod-destroy: ## Terraform Destroy for PROD env
 	@terraform destroy -var-file=env/dev.tfvars -auto-approve -no-color
 
