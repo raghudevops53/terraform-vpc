@@ -10,7 +10,8 @@ pipeline {
     stage('Terraform Apply') {
       steps {
         sh '''
-          make dev
+          make dev-init
+          make dev-apply
         '''
       }
     }
